@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace Polymorphism
 {
-   class Program
+   public abstract class Animal
    {
-      static void Main(string[] args)
+      public virtual string Speak()
       {
-         var runner = new Runner();
-         runner.Run();
+         return "The animal is speaking";
       }
+
+      public abstract void Eat();
+
    }
 }
